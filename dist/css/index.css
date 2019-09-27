@@ -1,13 +1,15 @@
 @charset "UTF-8";
-.variety-tutorium .tab-cont .cont-item .item-detail .detail-trait span:before, .title-module .text, .tab-head .head-item, .variety-tutorium .tab-cont .cont-item .item-detail .detail-btn a, .teacher-team .tab-cont .cont-item .item-detail .detail-finance a { display: inline-block; *zoom: 1; *display: inline; }
+.enter .enter-head .head-item, .enter .enter-cont ul li a .cont-text { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 
-.sift-teachers .tab-cont, .sift-teachers .tab-cont .cont-item .item-detail, .variety-tutorium .tab-cont, .variety-tutorium .tab-cont .cont-item .item-detail .detail-btn, .teacher-team .tab-cont, .special-teaching .teaching-cont { zoom: 1; }
+.variety-tutorium .tab-cont .cont-item .item-detail .detail-trait span:before, .enter .enter-cont ul li a:before, .title-module .text, .tab-head .head-item, .variety-tutorium .tab-cont .cont-item .item-detail .detail-btn a, .teacher-team .tab-cont .cont-item .item-detail .detail-finance a, .enter .enter-cont ul li a .cont-text, .enter .enter-cont ul li a .cont-time { display: inline-block; *zoom: 1; *display: inline; }
 
-.sift-teachers .tab-cont:after, .sift-teachers .tab-cont .cont-item .item-detail:after, .variety-tutorium .tab-cont:after, .variety-tutorium .tab-cont .cont-item .item-detail .detail-btn:after, .teacher-team .tab-cont:after, .special-teaching .teaching-cont:after { clear: both; }
+.sift-teachers .tab-cont, .sift-teachers .tab-cont .cont-item .item-detail, .variety-tutorium .tab-cont, .variety-tutorium .tab-cont .cont-item .item-detail .detail-btn, .teacher-team .tab-cont, .special-teaching .teaching-cont, .enter { zoom: 1; }
 
-.sift-teachers .tab-cont:before, .sift-teachers .tab-cont .cont-item .item-detail:before, .variety-tutorium .tab-cont:before, .variety-tutorium .tab-cont .cont-item .item-detail .detail-btn:before, .teacher-team .tab-cont:before, .special-teaching .teaching-cont:before, .sift-teachers .tab-cont:after, .sift-teachers .tab-cont .cont-item .item-detail:after, .variety-tutorium .tab-cont:after, .variety-tutorium .tab-cont .cont-item .item-detail .detail-btn:after, .teacher-team .tab-cont:after, .special-teaching .teaching-cont:after { content: ""; display: table; }
+.sift-teachers .tab-cont:after, .sift-teachers .tab-cont .cont-item .item-detail:after, .variety-tutorium .tab-cont:after, .variety-tutorium .tab-cont .cont-item .item-detail .detail-btn:after, .teacher-team .tab-cont:after, .special-teaching .teaching-cont:after, .enter:after { clear: both; }
 
-.variety-tutorium .tab-cont .cont-item .item-detail .detail-trait span:before { content: ""; width: 5px; height: 5px; border-radius: 50%; vertical-align: middle; margin-right: 10px; background-color: #588ce7; }
+.sift-teachers .tab-cont:before, .sift-teachers .tab-cont .cont-item .item-detail:before, .variety-tutorium .tab-cont:before, .variety-tutorium .tab-cont .cont-item .item-detail .detail-btn:before, .teacher-team .tab-cont:before, .special-teaching .teaching-cont:before, .enter:before, .sift-teachers .tab-cont:after, .sift-teachers .tab-cont .cont-item .item-detail:after, .variety-tutorium .tab-cont:after, .variety-tutorium .tab-cont .cont-item .item-detail .detail-btn:after, .teacher-team .tab-cont:after, .special-teaching .teaching-cont:after, .enter:after { content: ""; display: table; }
+
+.variety-tutorium .tab-cont .cont-item .item-detail .detail-trait span:before, .enter .enter-cont ul li a:before { content: ""; width: 5px; height: 5px; border-radius: 50%; vertical-align: middle; margin-right: 10px; background-color: #588ce7; }
 
 .wrap { width: 1200px; margin: 0 auto; }
 
@@ -23,7 +25,7 @@
 
 .title-module { font-size: 32px; font-weight: bold; line-height: 34px; color: #444444; text-align: center; }
 
-.title-module .text { padding: 0 15px; background: url("../images/title-bg.png") no-repeat center bottom; background-size: 100% auto; }
+.title-module .text { padding: 0 15px; background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/title-bg.png") no-repeat center bottom; background-size: 100% auto; }
 
 .tab-head { text-align: center; padding-top: 30px; }
 
@@ -34,7 +36,9 @@
 /* 精选授课师资 */
 .sift-teachers { padding-top: 40px; }
 
-.sift-teachers .tab-cont { padding-top: 30px; margin-right: -1px; }
+.sift-teachers .tab-cont { padding-top: 30px; margin-right: -1px; display: none; }
+
+.sift-teachers .tab-cont.cur { display: block; }
 
 .sift-teachers .tab-cont .cont-item { width: 280px; float: left; margin-right: 27px; }
 
@@ -55,9 +59,11 @@
 /* 多样化辅导班次 */
 .variety-tutorium { padding-top: 40px; }
 
-.variety-tutorium .tab-cont { padding-top: 29px; }
+.variety-tutorium .tab-cont { padding-top: 29px; display: none; }
 
-.variety-tutorium .tab-cont .cont-item { float: left; width: 382px; background: url("../images/bg_1.png") no-repeat; padding: 26px 20px 20px; -webkit-box-sizing: border-box; box-sizing: border-box; margin-right: 27px; }
+.variety-tutorium .tab-cont.cur { display: block; }
+
+.variety-tutorium .tab-cont .cont-item { float: left; width: 382px; background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/bg_1.png") no-repeat; padding: 26px 20px 20px; -webkit-box-sizing: border-box; box-sizing: border-box; margin-right: 27px; }
 
 .variety-tutorium .tab-cont .cont-item .item-title { font-size: 30px; line-height: 30px; font-weight: bold; color: #ffffff; text-align: center; margin-bottom: 26px; }
 
@@ -69,11 +75,11 @@
 
 .variety-tutorium .tab-cont .cont-item .item-detail .detail-intro { font-size: 18px; line-height: 28px; color: #666666; padding: 20px 0 20px 40px; border-bottom: 1px solid #eeeeee; text-align: left; }
 
-.variety-tutorium .tab-cont .cont-item .item-detail .detail-intro li { padding-left: 38px; background: url("../images/icon_1.png") no-repeat center left; margin-bottom: 16px; }
+.variety-tutorium .tab-cont .cont-item .item-detail .detail-intro li { padding-left: 38px; background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_1.png") no-repeat center left; margin-bottom: 16px; }
 
-.variety-tutorium .tab-cont .cont-item .item-detail .detail-intro li:nth-of-type(2) { background: url("../images/icon_2.png") no-repeat center left; }
+.variety-tutorium .tab-cont .cont-item .item-detail .detail-intro li:nth-of-type(2) { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_2.png") no-repeat center left; }
 
-.variety-tutorium .tab-cont .cont-item .item-detail .detail-intro li:nth-of-type(3) { background: url("../images/icon_3.png") no-repeat center left; }
+.variety-tutorium .tab-cont .cont-item .item-detail .detail-intro li:nth-of-type(3) { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_3.png") no-repeat center left; }
 
 .variety-tutorium .tab-cont .cont-item .item-detail .detail-intro li:last-child { margin-bottom: 0; }
 
@@ -93,34 +99,36 @@
 
 .variety-tutorium .tab-cont .cont-item:last-child { margin-right: 0; }
 
-.variety-tutorium .tab-cont .cont-item:nth-of-type(2) { background: url("../images/bg_2.png") no-repeat; }
+.variety-tutorium .tab-cont .cont-item:nth-of-type(2) { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/bg_2.png") no-repeat; }
 
 .variety-tutorium .tab-cont .cont-item:nth-of-type(2) .item-detail .detail-trait span:before { background-color: #fe8a59; }
 
-.variety-tutorium .tab-cont .cont-item:nth-of-type(2) .item-detail .detail-intro li { background: url("../images/icon_4.png") no-repeat center left; }
+.variety-tutorium .tab-cont .cont-item:nth-of-type(2) .item-detail .detail-intro li { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_4.png") no-repeat center left; }
 
-.variety-tutorium .tab-cont .cont-item:nth-of-type(2) .item-detail .detail-intro li:nth-of-type(2) { background: url("../images/icon_5.png") no-repeat center left; }
+.variety-tutorium .tab-cont .cont-item:nth-of-type(2) .item-detail .detail-intro li:nth-of-type(2) { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_5.png") no-repeat center left; }
 
-.variety-tutorium .tab-cont .cont-item:nth-of-type(2) .item-detail .detail-intro li:nth-of-type(3) { background: url("../images/icon_6.png") no-repeat center left; }
+.variety-tutorium .tab-cont .cont-item:nth-of-type(2) .item-detail .detail-intro li:nth-of-type(3) { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_6.png") no-repeat center left; }
 
 .variety-tutorium .tab-cont .cont-item:nth-of-type(2) .item-detail .detail-intro span { color: #fe8a59; }
 
-.variety-tutorium .tab-cont .cont-item:nth-of-type(3) { background: url("../images/bg_3.png") no-repeat; }
+.variety-tutorium .tab-cont .cont-item:nth-of-type(3) { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/bg_3.png") no-repeat; }
 
 .variety-tutorium .tab-cont .cont-item:nth-of-type(3) .item-detail .detail-trait span:before { background-color: #d7a160; }
 
-.variety-tutorium .tab-cont .cont-item:nth-of-type(3) .item-detail .detail-intro li { background: url("../images/icon_4.png") no-repeat center left; }
+.variety-tutorium .tab-cont .cont-item:nth-of-type(3) .item-detail .detail-intro li { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_4.png") no-repeat center left; }
 
-.variety-tutorium .tab-cont .cont-item:nth-of-type(3) .item-detail .detail-intro li:nth-of-type(2) { background: url("../images/icon_5.png") no-repeat center left; }
+.variety-tutorium .tab-cont .cont-item:nth-of-type(3) .item-detail .detail-intro li:nth-of-type(2) { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_5.png") no-repeat center left; }
 
-.variety-tutorium .tab-cont .cont-item:nth-of-type(3) .item-detail .detail-intro li:nth-of-type(3) { background: url("../images/icon_6.png") no-repeat center left; }
+.variety-tutorium .tab-cont .cont-item:nth-of-type(3) .item-detail .detail-intro li:nth-of-type(3) { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_6.png") no-repeat center left; }
 
 .variety-tutorium .tab-cont .cont-item:nth-of-type(3) .item-detail .detail-intro span { color: #d6a060; }
 
 /* 名师团队授课 */
 .teacher-team { padding-top: 39px; }
 
-.teacher-team .tab-cont { padding-top: 30px; }
+.teacher-team .tab-cont { padding-top: 30px; display: none; }
+
+.teacher-team .tab-cont.cur { display: block; }
 
 .teacher-team .tab-cont .cont-item { float: left; width: 585px; padding: 30px 30px 29px 30px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 6px; background-color: #eeeeee; margin-bottom: 30px; position: relative; }
 
@@ -128,13 +136,13 @@
 
 .teacher-team .tab-cont .cont-item .item-detail { width: 324px; float: right; }
 
-.teacher-team .tab-cont .cont-item .item-detail .detail-title { font-size: 18px; line-height: 22px; color: #444444; font-weight: bold; background: url("../images/famous-teacher.png") no-repeat left; background-size: auto 100%; margin-bottom: 10px; }
+.teacher-team .tab-cont .cont-item .item-detail .detail-title { font-size: 18px; line-height: 22px; color: #444444; font-weight: bold; background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/famous-teacher.png") no-repeat left; background-size: auto 100%; margin-bottom: 10px; }
 
 .teacher-team .tab-cont .cont-item .item-detail p { font-size: 14px; line-height: 24px; color: #666666; margin-bottom: 20px; }
 
 .teacher-team .tab-cont .cont-item .item-detail .detail-finance { font-size: 14px; line-height: 28px; color: #444444; }
 
-.teacher-team .tab-cont .cont-item .item-detail .detail-finance a { padding-right: 50px; background: url("../images/icon_7.png") no-repeat bottom right; background-size: auto 22px; margin-bottom: 8px; }
+.teacher-team .tab-cont .cont-item .item-detail .detail-finance a { padding-right: 50px; background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_7.png") no-repeat bottom right; background-size: auto 22px; margin-bottom: 8px; }
 
 .teacher-team .tab-cont .cont-item .item-detail .detail-finance a:last-child { margin-bottom: 0; }
 
@@ -147,24 +155,57 @@
 .teacher-team .tab-cont .cont-item:nth-of-type(odd) { margin-right: 30px; }
 
 /* 特色教学服务 */
+.special-teaching { margin-bottom: 40px; }
+
 .special-teaching .teaching-cont { margin-right: -28px; padding-top: 30px; }
 
 .special-teaching .teaching-cont .cont-item { width: 280px; background-color: #ffffff; border: solid 1px #e4e4e4; -webkit-box-sizing: border-box; box-sizing: border-box; float: left; margin-right: 27px; text-align: center; padding-bottom: 30px; }
 
-.special-teaching .teaching-cont .cont-item .item-bg { width: 100%; height: 105px; background: url("../images/icon_8.png") no-repeat center; }
+.special-teaching .teaching-cont .cont-item .item-bg { width: 100%; height: 105px; background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_8.png") no-repeat center; }
 
 .special-teaching .teaching-cont .cont-item .item-title { font-size: 24px; line-height: 24px; color: #e12929; margin-bottom: 9px; }
 
 .special-teaching .teaching-cont .cont-item .item-text { font-size: 16px; line-height: 16px; color: #666666; }
 
-.special-teaching .teaching-cont .cont-item:nth-of-type(2) .item-bg { background: url("../images/icon_9.png") no-repeat center; }
+.special-teaching .teaching-cont .cont-item:nth-of-type(2) .item-bg { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_9.png") no-repeat center; }
 
-.special-teaching .teaching-cont .cont-item:nth-of-type(3) .item-bg { background: url("../images/icon_10.png") no-repeat center; }
+.special-teaching .teaching-cont .cont-item:nth-of-type(3) .item-bg { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_10.png") no-repeat center; }
 
-.special-teaching .teaching-cont .cont-item:nth-of-type(4) .item-bg { background: url("../images/icon_11.png") no-repeat center; }
+.special-teaching .teaching-cont .cont-item:nth-of-type(4) .item-bg { background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_11.png") no-repeat center; }
+
+/* 入口 */
+.enter { background-color: #ffffff; border-top: 1px solid #e4e4e4; border-right: 1px solid #e4e4e4; border-bottom: 1px solid #e4e4e4; margin-bottom: 20px; }
+
+.enter .enter-head { width: 58px; float: left; }
+
+.enter .enter-head .head-item { display: block; width: 58px; height: 115px; padding: 0 20px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 16px; line-height: 16px; color: #444444; -webkit-writing-mode: vertical-lr; -ms-writing-mode: tb-lr; writing-mode: vertical-lr; text-align: center; cursor: pointer; background-color: #f4f4f4; border-right: 1px solid #e4e4e4; border-bottom: 1px solid #e4e4e4; border-left: 1px solid #e4e4e4; }
+
+.enter .enter-head .head-item:last-child { border-bottom: 0; }
+
+.enter .enter-head .head-item.cur { background-color: #fff; color: #e12929; font-weight: bold; border-left: 4px solid #e12929; padding: 0 24px 0 16px; border-right: none; }
+
+.enter .enter-cont { float: left; width: 1142px; padding: 17px 68px 0; -webkit-box-sizing: border-box; box-sizing: border-box; display: none; }
+
+.enter .enter-cont.cur { display: block; }
+
+.enter .enter-cont ul { width: 50%; float: left; border-right: 1px solid #eeeeee; padding-right: 100px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.enter .enter-cont ul:last-child { border-right: 0; padding-right: 0; padding-left: 100px; }
+
+.enter .enter-cont ul li { color: #444444; }
+
+.enter .enter-cont ul li a { font-size: 16px; line-height: 42px; clear: both; }
+
+.enter .enter-cont ul li a:before { width: 3px; height: 3px; background-color: #e12929; border-radius: 0; margin-right: 9px; }
+
+.enter .enter-cont ul li a .cont-text { width: 73%; vertical-align: middle; color: #444444; }
+
+.enter .enter-cont ul li a .cont-time { vertical-align: middle; color: #888888; }
+
+.enter .enter-cont ul li a:hover { color: #e12929; }
 
 @media screen and (max-width: 750px) { .wrap { width: 10rem; }
-  .sift-teachers .tab-cont:before, .variety-tutorium .tab-cont:before, .sift-teachers .tab-cont:after, .variety-tutorium .tab-cont:after { display: none; }
+  .sift-teachers .tab-cont:before, .variety-tutorium .tab-cont:before, .special-teaching .teaching-cont:before, .sift-teachers .tab-cont:after, .variety-tutorium .tab-cont:after, .special-teaching .teaching-cont:after { display: none; }
   body, div, a, p, span, ul, li, input { -webkit-box-sizing: border-box; box-sizing: border-box; }
   .pc-banner { display: none; }
   .wap-banner { display: block; }
@@ -178,8 +219,9 @@
   .tab-head .head-item:last-child { display: none; }
   /* 精选授课师资 */
   .sift-teachers { padding: 0.53333rem 0.32rem 0; }
-  .sift-teachers .tab-cont { padding-top: 0.4rem; margin-right: 0; display: grid; grid-template-columns: repeat(2, 1fr); grid-column-gap: 0.56rem; grid-row-gap: 0.4rem; }
-  .sift-teachers .tab-cont .cont-item { width: 4.4rem; margin-right: 0; }
+  .sift-teachers .tab-cont { padding-top: 0.4rem; margin-right: 0; grid-template-columns: repeat(2, 1fr); grid-column-gap: 0.56rem; grid-row-gap: 0.4rem; }
+  .sift-teachers .tab-cont.cur { display: grid; }
+  .sift-teachers .tab-cont .cont-item { width: 4.4rem; margin-right: 0; float: none; }
   .sift-teachers .tab-cont .cont-item .item-bg { margin-bottom: 0.26667rem; }
   .sift-teachers .tab-cont .cont-item .item-detail .detail-l { float: none; }
   .sift-teachers .tab-cont .cont-item .item-detail .detail-l .l-title { font-size: 0.34667rem; line-height: 0.34667rem; margin-bottom: 0.25333rem; }
@@ -187,8 +229,9 @@
   .sift-teachers .tab-cont .cont-item .item-detail .detail-btn { height: 0.56rem; line-height: 0.53333rem; padding: 0 0.32rem; border-radius: 0.28rem; border: none; background-image: -webkit-gradient(linear, left top, right top, from(#f7734a), to(#e12929)), -webkit-gradient(linear, left top, left bottom, from(#d1d1d1), to(#d1d1d1)); background-image: linear-gradient(90deg, #f7734a 0%, #e12929 100%), linear-gradient(#d1d1d1, #d1d1d1); background-blend-mode: normal, normal; -webkit-box-shadow: 0px 3px 5px 0px rgba(225, 41, 41, 0.48); box-shadow: 0px 3px 5px 0px rgba(225, 41, 41, 0.48); color: #ffffff; }
   /* 多样化辅导班次 */
   .variety-tutorium { padding: 0.53333rem 0.32rem 0; }
-  .variety-tutorium .tab-cont { padding-top: 0.4rem; margin-right: 0; display: grid; grid-template-columns: repeat(2, 1fr); grid-column-gap: 0.24rem; grid-row-gap: 0.24rem; }
-  .variety-tutorium .tab-cont .cont-item { width: 4.56rem; background-size: 100% 100%; border-radius: 0.08rem; padding: 0.29333rem 0.13333rem 0.13333rem; margin-right: 0; }
+  .variety-tutorium .tab-cont { padding-top: 0.4rem; margin-right: 0; grid-template-columns: repeat(2, 1fr); grid-column-gap: 0.24rem; grid-row-gap: 0.24rem; }
+  .variety-tutorium .tab-cont.cur { display: grid; }
+  .variety-tutorium .tab-cont .cont-item { width: 4.56rem; background-size: 100% 100%; border-radius: 0.08rem; padding: 0.29333rem 0.13333rem 0.13333rem; margin-right: 0; float: none; }
   .variety-tutorium .tab-cont .cont-item .item-title { font-size: 0.45333rem; line-height: 0.45333rem; margin-bottom: 0.33333rem; }
   .variety-tutorium .tab-cont .cont-item .item-detail { padding: 0.26667rem 0.26667rem 0.4rem; }
   .variety-tutorium .tab-cont .cont-item .item-detail .detail-trait { padding: 0 0 0.26667rem; }
@@ -221,4 +264,27 @@
   .teacher-team .tab-cont .cont-item .item-detail .detail-finance { font-size: 0.34667rem; line-height: 0.42667rem; }
   .teacher-team .tab-cont .cont-item .item-detail .detail-finance a { width: 100%; padding-right: 1.72rem; margin-bottom: 0.21333rem; background-size: auto 0.42667rem; }
   .teacher-team .tab-cont .cont-item .homepage { right: auto; left: 0.4rem; bottom: 0.4rem; border-radius: 0px 0.34667rem 0.34667rem 0px; opacity: 0.9; }
-  .teacher-team .tab-cont .cont-item:nth-of-type(odd) { margin-right: 0; } }
+  .teacher-team .tab-cont .cont-item:nth-of-type(odd) { margin-right: 0; }
+  /* 特色教学服务 */
+  .special-teaching { margin-bottom: 0.53333rem; padding: 0 0.30667rem 0 0.32rem; }
+  .special-teaching .teaching-cont { margin-right: 0; padding-top: 0.4rem; display: grid; grid-template-columns: repeat(2, 1fr); grid-column-gap: 0.36rem; grid-row-gap: 0.4rem; }
+  .special-teaching .teaching-cont .cont-item { width: 4.50667rem; float: none; margin-right: 0; padding-bottom: 0.4rem; }
+  .special-teaching .teaching-cont .cont-item .item-bg { height: 1.44rem; background-size: 0.73333rem auto; }
+  .special-teaching .teaching-cont .cont-item .item-title { font-size: 0.4rem; line-height: 0.4rem; margin-bottom: 0.17333rem; }
+  .special-teaching .teaching-cont .cont-item .item-text { font-size: 0.32rem; line-height: 0.32rem; }
+  .special-teaching .teaching-cont .cont-item:nth-of-type(2) .item-bg { background-size: 0.85333rem auto; }
+  .special-teaching .teaching-cont .cont-item:nth-of-type(3) .item-bg { background-size: 0.85333rem auto; }
+  .special-teaching .teaching-cont .cont-item:nth-of-type(4) .item-bg { background-size: 0.61333rem auto; }
+  /* 入口 */
+  .enter { margin-bottom: 0.26667rem; padding: 0 0.32rem; border-top: 0; border-bottom: 0; }
+  .enter .enter-head { width: 100%; float: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .enter .enter-head .head-item { width: 25%; height: 0.77333rem; line-height: 0.77333rem; padding: 0; font-size: 0.37333rem; -webkit-writing-mode: horizontal-tb; -ms-writing-mode: lr-tb; writing-mode: horizontal-tb; border-top: 1px solid #e4e4e4; border-left: 0; }
+  .enter .enter-head .head-item:last-child { border-bottom: 1px solid #e4e4e4; }
+  .enter .enter-head .head-item.cur { padding: 0; border-left: 1px solid #e4e4e4; border-right: 1px solid #e4e4e4; border-bottom: 0; border-top: 0.05333rem solid #e12929; }
+  .enter .enter-cont { float: none; width: 100%; padding: 0.26667rem 0; }
+  .enter .enter-cont ul { width: 100%; float: none; border-right: 0; padding-right: 0; }
+  .enter .enter-cont ul:last-child { display: none; }
+  .enter .enter-cont ul li { border-bottom: 1px dashed #e4e4e4; }
+  .enter .enter-cont ul li a { font-size: 0.34667rem; line-height: 0.8rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .enter .enter-cont ul li a .cont-text { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+  .enter .enter-cont ul li a .cont-time { color: #999999; } }

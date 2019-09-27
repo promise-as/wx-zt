@@ -76,7 +76,7 @@ $bg-color: #e12929;
   .text{
     @extend %in-b;
     padding: 0 15px;
-    background: url("../images/title-bg.png") no-repeat center bottom;
+    background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/title-bg.png") no-repeat center bottom;
     background-size: 100% auto;
   }
 }
@@ -119,6 +119,10 @@ $bg-color: #e12929;
     padding-top: 30px;
     @extend %clearfix;
     margin-right: -1px;
+    display: none;
+    &.cur{
+      display: block;
+    }
     .cont-item{
       width: 280px;
       float: left;
@@ -181,10 +185,14 @@ $bg-color: #e12929;
   .tab-cont{
     padding-top: 29px;
     @extend %clearfix;
+    display: none;
+    &.cur{
+      display: block;
+    }
     .cont-item{
       float: left;
       width: 382px;
-      background: url("../images/bg_1.png") no-repeat;
+      background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/bg_1.png") no-repeat;
       padding: 26px 20px 20px;
       box-sizing: border-box;
       margin-right: 27px;
@@ -223,13 +231,13 @@ $bg-color: #e12929;
           text-align: left;
           li{
             padding-left: 38px;
-            background: url("../images/icon_1.png") no-repeat center left;
+            background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_1.png") no-repeat center left;
             margin-bottom: 16px;
             &:nth-of-type(2){
-              background: url("../images/icon_2.png") no-repeat center left;
+              background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_2.png") no-repeat center left;
             }
             &:nth-of-type(3){
-              background: url("../images/icon_3.png") no-repeat center left;
+              background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_3.png") no-repeat center left;
             }
             &:last-child{
               margin-bottom: 0;
@@ -292,7 +300,7 @@ $bg-color: #e12929;
         margin-right: 0;
       }
       &:nth-of-type(2){
-        background: url("../images/bg_2.png") no-repeat;
+        background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/bg_2.png") no-repeat;
         .item-detail{
           .detail-trait{
             span{
@@ -303,12 +311,12 @@ $bg-color: #e12929;
           }
           .detail-intro{
             li{
-              background: url("../images/icon_4.png") no-repeat center left;
+              background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_4.png") no-repeat center left;
               &:nth-of-type(2){
-                background: url("../images/icon_5.png") no-repeat center left;
+                background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_5.png") no-repeat center left;
               }
               &:nth-of-type(3){
-                background: url("../images/icon_6.png") no-repeat center left;
+                background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_6.png") no-repeat center left;
               }
             }
             span{
@@ -318,7 +326,7 @@ $bg-color: #e12929;
         }
       }
       &:nth-of-type(3){
-        background: url("../images/bg_3.png") no-repeat;
+        background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/bg_3.png") no-repeat;
         .item-detail{
           .detail-trait{
             span{
@@ -329,12 +337,12 @@ $bg-color: #e12929;
           }
           .detail-intro{
             li{
-              background: url("../images/icon_4.png") no-repeat center left;
+              background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_4.png") no-repeat center left;
               &:nth-of-type(2){
-                background: url("../images/icon_5.png") no-repeat center left;
+                background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_5.png") no-repeat center left;
               }
               &:nth-of-type(3){
-                background: url("../images/icon_6.png") no-repeat center left;
+                background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_6.png") no-repeat center left;
               }
             }
             span{
@@ -353,6 +361,10 @@ $bg-color: #e12929;
   .tab-cont{
     padding-top: 30px;
     @extend %clearfix;
+    display: none;
+    &.cur{
+      display: block;
+    }
     .cont-item{
       float: left;
       width: 585px;
@@ -375,7 +387,7 @@ $bg-color: #e12929;
           line-height: 22px;
           color: #444444;
           font-weight: bold;
-          background: url("../images/famous-teacher.png") no-repeat left;
+          background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/famous-teacher.png") no-repeat left;
           background-size: auto 100%;
           margin-bottom: 10px;
         }
@@ -392,7 +404,7 @@ $bg-color: #e12929;
           a{
             @extend %in-b;
             padding-right: 50px;
-            background: url("../images/icon_7.png") no-repeat bottom right;
+            background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_7.png") no-repeat bottom right;
             background-size: auto 22px;
             margin-bottom: 8px;
             &:last-child{
@@ -430,6 +442,7 @@ $bg-color: #e12929;
 
 /* 特色教学服务 */
 .special-teaching{
+  margin-bottom: 40px;
   .teaching-cont{
     @extend %clearfix;
     margin-right: -28px;
@@ -446,7 +459,7 @@ $bg-color: #e12929;
       .item-bg{
         width: 100%;
         height: 105px;
-        background: url("../images/icon_8.png") no-repeat center;
+        background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_8.png") no-repeat center;
       }
       .item-title{
         font-size: 24px;
@@ -461,17 +474,113 @@ $bg-color: #e12929;
       }
       &:nth-of-type(2){
         .item-bg{
-          background: url("../images/icon_9.png") no-repeat center;
+          background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_9.png") no-repeat center;
         }
       }
       &:nth-of-type(3){
         .item-bg{
-          background: url("../images/icon_10.png") no-repeat center;
+          background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_10.png") no-repeat center;
         }
       }
       &:nth-of-type(4){
         .item-bg{
-          background: url("../images/icon_11.png") no-repeat center;
+          background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zt/images/icon_11.png") no-repeat center;
+        }
+      }
+    }
+  }
+}
+
+/* 入口 */
+.enter{
+  background-color: #ffffff;
+  border-top: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 20px;
+  @extend %clearfix;
+  .enter-head{
+    width: 58px;
+    float: left;
+    .head-item{
+      display: block;
+      width: 58px;
+      height: 115px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      font-size: 16px;
+      line-height: 16px;
+      color: #444444;
+      writing-mode : vertical-lr;
+      text-align: center;
+      @extend %one;
+      cursor: pointer;
+      background-color: #f4f4f4;
+      border-right: 1px solid #e4e4e4;
+      border-bottom: 1px solid #e4e4e4;
+      border-left: 1px solid #e4e4e4;
+      &:last-child{
+        border-bottom: 0;
+      }
+      &.cur{
+        background-color: #fff;
+        color: $bg-color;
+        font-weight: bold;
+        border-left: 4px solid $bg-color;
+        padding: 0 24px 0 16px;
+        border-right: none;
+      }
+    }
+  }
+  .enter-cont{
+    float: left;
+    width: 1142px;
+    padding: 17px 68px 0;
+    box-sizing: border-box;
+    display: none;
+    &.cur{
+      display: block;
+    }
+    ul{
+      width: 50%;
+      float: left;
+      border-right: 1px solid #eeeeee;
+      padding-right: 100px;
+      box-sizing: border-box;
+      &:last-child{
+        border-right: 0;
+        padding-right: 0;
+        padding-left: 100px;
+      }
+      li{
+        color: #444444;
+        a{
+          font-size: 16px;
+          line-height: 42px;
+          clear: both;
+          @extend %point-a;
+          &:before{
+            width: 3px;
+            height: 3px;
+            background-color: $bg-color;
+            border-radius: 0;
+            margin-right: 9px;
+          }
+          .cont-text{
+            @extend %in-b;
+            width: 73%;
+            @extend %one;
+            vertical-align: middle;
+            color: #444444;
+          }
+          .cont-time{
+            @extend %in-b;
+            vertical-align: middle;
+            color: #888888;
+          }
+          &:hover{
+            color: $bg-color;
+          }
         }
       }
     }
@@ -573,13 +682,17 @@ $bg-color: #e12929;
       padding-top: pr(30px);
       @extend %clearclass;
       margin-right: 0;
-      display: grid;
+      // display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: pr(42px);
       grid-row-gap: pr(30px);
+      &.cur{
+        display: grid;
+      }
       .cont-item{
         width: pr(330px);
         margin-right: 0;
+        float: none;
         .item-bg{
           margin-bottom: pr(20px);
         }
@@ -629,16 +742,20 @@ $bg-color: #e12929;
       padding-top: pr(30px);
       @extend %clearclass;
       margin-right: 0;
-      display: grid;
+      //display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: pr(18px);
       grid-row-gap: pr(18px);
+      &.cur{
+        display: grid;
+      }
       .cont-item{
         width: pr(342px);
         background-size: 100% 100%;
         border-radius: pr(6px);
         padding: pr(22px) pr(10px) pr(10px);
         margin-right: 0;
+        float: none;
         .item-title{
           font-size: pr(34px);
           line-height: pr(34px);
@@ -734,6 +851,7 @@ $bg-color: #e12929;
       }
     }
   }
+
   /* 名师团队授课 */
   .teacher-team {
     padding: pr(40px) pr(24px) 0;
@@ -781,6 +899,120 @@ $bg-color: #e12929;
         }
         &:nth-of-type(odd){
           margin-right: 0;
+        }
+      }
+    }
+  }
+
+  /* 特色教学服务 */
+  .special-teaching{
+    margin-bottom: pr(40px);
+    padding: 0 pr(23px) 0 pr(24px);
+    .teaching-cont{
+      @extend %clearclass;
+      margin-right: 0;
+      padding-top: pr(30px);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: pr(27px);
+      grid-row-gap: pr(30px);
+      .cont-item{
+        width: pr(338px);
+        float: none;
+        margin-right: 0;
+        padding-bottom: pr(30px);
+        .item-bg{
+          height: pr(108px);
+          background-size: pr(55px) auto;
+        }
+        .item-title{
+          font-size: pr(30px);
+          line-height: pr(30px);
+          margin-bottom: pr(13px);
+        }
+        .item-text{
+          font-size: pr(24px);
+          line-height: pr(24px);
+        }
+        &:nth-of-type(2){
+          .item-bg{
+            background-size: pr(64px) auto;
+          }
+        }
+        &:nth-of-type(3){
+          .item-bg{
+            background-size: pr(64px) auto;
+          }
+        }
+        &:nth-of-type(4){
+          .item-bg{
+            background-size: pr(46px) auto;
+          }
+        }
+      }
+    }
+  }
+
+  /* 入口 */
+  .enter{
+    margin-bottom: pr(20px);
+    padding: 0 pr(24px);
+    border-top: 0;
+    border-bottom: 0;
+    .enter-head{
+      width: 100%;
+      float: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .head-item{
+        width: 25%;
+        height: pr(58px);
+        line-height: pr(58px);
+        padding: 0;
+        font-size: pr(28px);
+        writing-mode: horizontal-tb;
+        border-top: 1px solid #e4e4e4;
+        border-left: 0;
+        &:last-child{
+          border-bottom: 1px solid #e4e4e4;
+        }
+        &.cur{
+          padding: 0;
+          border-left: 1px solid #e4e4e4;
+          border-right: 1px solid #e4e4e4;
+          border-bottom: 0;
+          border-top: pr(4px) solid $bg-color;
+        }
+      }
+    }
+    .enter-cont{
+      float: none;
+      width: 100%;
+      padding: pr(20px) 0;
+      ul{
+        width: 100%;
+        float: none;
+        border-right: 0;
+        padding-right: 0;
+        &:last-child{
+          display: none;
+        }
+        li{
+          border-bottom: 1px dashed #e4e4e4;
+          a{
+            font-size: pr(26px);
+            line-height: pr(60px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .cont-text{
+              flex: 1;
+            }
+            .cont-time{
+              color: #999999;
+            }
+          }
         }
       }
     }
